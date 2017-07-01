@@ -128,7 +128,7 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 alias rb='ruby'
-alias sb='subl'
+alias vs='code'
 alias v='vagrant'
 alias py='python3'
 
@@ -155,6 +155,20 @@ elif which putclip >/dev/null 2>&1 ; then
     alias -g C='| putclip'
 fi
 
+########################################
+# zplug
+zplug 'zsh-users/zsh-autosuggestions'
+zplug 'zsh-users/zsh-completions'
+zplug "zsh-users/zsh-history-substring-search"
+
+if ! zplug check --verbose; then
+  printf 'Install? [y/N]: '
+  if read -q; then
+    echo; zplug install
+  fi
+fi
+
+zplug load --verbose
 
 ########################################
 # OS 別の設定
