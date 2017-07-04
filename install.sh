@@ -1,3 +1,5 @@
+cd ~
+
 # install Command Line Tools
 if ! type xcode-select >/dev/null 2>&1; then
   xcode-select --install
@@ -14,10 +16,13 @@ ln -snf ~/dotfiles/.gitignore ~/.
 ln -snf ~/dotfiles/.gitconfig ~/.
 ln -snf ~/dotfiles/.zshrc ~/.
 ln -snf ~/dotfiles/.brewfile/Brewfile ~/.
+ln -snf ~/dotfiles/.config ~/.
 
 # brew
 brew update
 brew bundle
 
 # switch shell
-chsh -s /usr/local/bin/zsh
+if [ $(echo $SHELL) != '/bin/zsh' ] ; then
+  chsh -s /bin/zsh
+fi
