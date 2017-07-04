@@ -6,6 +6,7 @@ brew 'rbenv'
 
 # get brew cask for apps
 tap 'caskroom/cask'
+tap 'caskroom/homebrew-versions'
 
 # install the apps
 cask 'google-chrome'
@@ -13,8 +14,10 @@ cask 'firefox'
 cask 'java' unless system "/usr/libexec/java_home --failfast"
 cask 'iterm2'
 cask 'alfred'
-cask 'slack'
 cask 'hammerspoon'
+cask 'slack'
+cask 'sequel-pro'
+cask 'visual-studio-code'
 
 # App Store applications
 # for office
@@ -23,7 +26,6 @@ mas 'iMovie (10.1.6)', id: 408981434
 mas 'GarageBand (10.2.0)', id: 682658836
 mas 'Pages (6.2)', id: 409201541
 mas 'Keynote (7.2)', id: 409183694
-mas 'Slack (2.6.2)', id: 803453959
 mas 'Magnet (2.1.0)', id: 441258766
 mas 'Numbers (4.2)', id: 409203825
 mas 'FreeMemory Pro (1.9.1)', id: 486967844
