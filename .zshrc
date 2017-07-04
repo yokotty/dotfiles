@@ -9,7 +9,7 @@ colors
 
 # ヒストリの設定
 HISTFILE=~/.zsh_history
-HISTSIZE=1000000
+HISTSIZE=10000
 SAVEHIST=1000000
 
 # プロンプト
@@ -118,7 +118,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 ########################################
 # エイリアス
 
-alias la='ls -a'
+alias la='ls -la'
 alias ll='ls -l'
 
 alias rm='rm -i'
@@ -157,6 +157,8 @@ fi
 
 ########################################
 # zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
 zplug "zsh-users/zsh-history-substring-search"
@@ -184,3 +186,9 @@ case ${OSTYPE} in
 esac
 
 # vim:set ft=zsh:
+
+########################################
+# Brewfile 自動アップデート
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi

@@ -1,0 +1,7 @@
+tap 'caskroom/cask'
+cask "google-chrome"
+cask "java" unless system "/usr/libexec/java_home --failfast"
+cask "firefox", args: { appdir: "~/my-apps/Applications" }
+brew 'zsh'
+brew 'mas'
+brew 'zplug'

@@ -1,0 +1,12 @@
+[core]
+    excludesfile = ~/.gitignore
+[alias]
+    st = status
+    d = diff
+    b = branch
+    co = checkout
+    cob = checkout -b
+    ci = commit
+[user]
+    name  = yokotty
+    email = jumpei.yokota@gmail.com
