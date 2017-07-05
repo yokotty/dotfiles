@@ -22,7 +22,6 @@ ln -snf dotfiles/.zshrc ~/.
 ln -snf dotfiles/.zprofile ~/.
 ln -snf dotfiles/.zshenv ~/.
 ln -snf dotfiles/.brewfile/Brewfile ~/.
-ln -snf dotfiles/.config ~/.
 
 # brew
 brew update
