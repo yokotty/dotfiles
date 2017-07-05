@@ -1,7 +1,3 @@
-# Created by newuser for 5.0.5
-
-# 少し凝った zshrc
-
 ########################################
 # 色を使用出来るようにする
 autoload -Uz colors
