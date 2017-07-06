@@ -16,12 +16,13 @@ if ! [ -e dotfiles/.zshenv ]; then
 fi
 
 # set symlink
-ln -snf dotfiles/.gitignore_global ~/.
 ln -snf dotfiles/.gitconfig ~/.
+ln -snf dotfiles/.gitignore_global ~/.
 ln -snf dotfiles/.zshrc ~/.
 ln -snf dotfiles/.zprofile ~/.
 ln -snf dotfiles/.zshenv ~/.
 ln -snf dotfiles/.brewfile/Brewfile ~/.
+ln -snf dotfiles/.bundle ~/.
 
 # brew
 brew update
@@ -31,6 +32,3 @@ brew bundle
 if [ $(echo $SHELL) != '/bin/zsh' ] ; then
   chsh -s /bin/zsh
 fi
-
-# init
-git config --global core.excludesfile ~/.gitignore_global

@@ -1,0 +1,2 @@
+BUNDLE_BUILD__NOKOGIRI: "--use-system-libraries"
+BUNDLE_BUILD__LIBV8: "--with-system-v8"
