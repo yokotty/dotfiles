@@ -188,3 +188,8 @@ esac
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
+
+########################################
+# rbenv
+export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init - zsh)"

@@ -4,6 +4,10 @@ brew 'zplug'
 brew 'wget'
 brew 'rbenv'
 brew 'postgresql'
+brew 'maven'
+brew 'memcached'
+brew 'libxml2'
+brew 'mysql'
 
 # get brew cask for apps
 tap 'caskroom/cask'
@@ -19,7 +23,6 @@ cask 'hammerspoon'
 cask 'slack'
 cask 'sequel-pro'
 cask 'visual-studio-code'
-cask 'eclipse-platform'
 
 # App Store applications
 # for office

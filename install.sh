@@ -31,3 +31,6 @@ brew bundle
 if [ $(echo $SHELL) != '/bin/zsh' ] ; then
   chsh -s /bin/zsh
 fi
+
+# init
+git config --global core.excludesfile ~/.gitignore_global
