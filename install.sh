@@ -32,3 +32,9 @@ brew bundle
 if [ $(echo $SHELL) != '/bin/zsh' ] ; then
   chsh -s /bin/zsh
 fi
+
+# Ricty
+if ! ls ~/Library/Fonts/Ricty*.ttf > /dev/null 2>&1; then
+   cp -f /usr/local/Cellar/ricty/4.1.0_2/share/fonts/Ricty*.ttf ~/Library/Fonts/
+   fc-cache -vf
+fi
