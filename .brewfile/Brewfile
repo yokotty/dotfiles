@@ -25,3 +25,5 @@ brew 'node'
 brew 'yarn'
 brew 'fontforge', args: ['use-gcc', 'without-python']
 brew 'ricty'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
