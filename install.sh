@@ -11,18 +11,19 @@ if ! type brew >/dev/null 2>&1; then
   brew tap Homebrew/bundle
 fi
 
-if ! [ -e dotfiles/.zshenv ]; then
-  cp dotfiles/.zshenv_base ~/dotfiles/.zshenv
+if ! [ -e dotfiles/zshenv ]; then
+  cp dotfiles/zshenv_base ~/dotfiles/zshenv
 fi
 
 # set symlink
-ln -snf dotfiles/.gitconfig ~/.
-ln -snf dotfiles/.gitignore_global ~/.
-ln -snf dotfiles/.zshrc ~/.
-ln -snf dotfiles/.zprofile ~/.
-ln -snf dotfiles/.zshenv ~/.
-ln -snf dotfiles/.brewfile/Brewfile ~/.
-ln -snf dotfiles/.bundle ~/.
+ln -snf dotfiles/gitconfig ~/.gitconfig
+ln -snf dotfiles/gitignore_global ~/.gitignore_global
+ln -snf dotfiles/zshrc ~/.zshrc
+ln -snf dotfiles/zprofile ~/.zprofile
+ln -snf dotfiles/zshenv ~/.zshenv
+ln -snf dotfiles/Brewfile ~/Brewfile
+ln -snf dotfiles/bundle ~/.bundle
+ln -snf dotfiles/karabiner ~/.config/karabiner
 
 # brew
 brew update

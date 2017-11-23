@@ -1,29 +1,16 @@
 # get brew cask for apps
 tap 'caskroom/cask'
-tap 'caskroom/homebrew-versions'
 tap 'sanemat/font'
 
 # install the apps
-cask 'google-chrome'
-cask 'firefox'
 cask 'java' unless system "/usr/libexec/java_home --failfast"
-cask 'iterm2'
-cask 'slack'
-cask 'sequel-pro'
-cask 'xquartz'
 
 # install scripts
 brew 'wget'
 brew 'rbenv'
-brew 'postgresql'
-brew 'maven'
-brew 'memcached'
-brew 'libxml2'
 brew 'mysql'
 brew 'gradle'
 brew 'node'
 brew 'yarn'
 brew 'fontforge', args: ['use-gcc', 'without-python']
 brew 'ricty'
-brew 'pyenv'
-brew 'pyenv-virtualenv'
