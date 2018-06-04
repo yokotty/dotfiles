@@ -4,13 +4,13 @@ tap 'sanemat/font'
 
 # install the apps
 cask 'java' unless system "/usr/libexec/java_home --failfast"
+cask 'firefox'
 
 # install scripts
 brew 'wget'
 brew 'rbenv'
 brew 'mysql'
-brew 'gradle'
-brew 'node'
-brew 'yarn'
-brew 'fontforge', args: ['use-gcc', 'without-python']
 brew 'ricty'
+brew 'zsh-completions'
+brew 'zsh-autosuggestions'
+brew 'zsh-history-substring-search'

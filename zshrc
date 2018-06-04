@@ -136,7 +136,7 @@ alias -g L='| less'
 alias -g G='| grep'
 
 # gitコマンド
-alias g='git'
+alias g='hub'
 
 # C で標準出力をクリップボードにコピーする
 # mollifier delta blog : http://mollifier.hatenablog.com/entry/20100317/p1
@@ -196,3 +196,23 @@ eval "$(rbenv init - zsh)"
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH=${PYENV_ROOT}/bin:$PATH
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
+#embulk
+export PATH="$HOME/.embulk/bin:$PATH"
+
+#digdag
+export PATH="$HOME/bin:$PATH"
+
+#direnv
+eval "$(direnv hook zsh)"
+
+setopt nonomatch
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
