@@ -1,2 +1,4 @@
 zshenv
 .bundle
+bundle/cache
+.idea
