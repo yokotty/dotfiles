@@ -12,7 +12,8 @@ cask 'java8'
 cask 'google-japanese-ime'
 cask 'dropbox'
 cask 'google-chrome'
-cask 'google-drive-file-stream'
+cask 'slack'
+cask 'alfred'
 
 # install scripts
 brew 'wget'
