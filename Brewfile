@@ -2,6 +2,7 @@
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 tap 'sanemat/font'
+tap 'kyoshidajp/ghkw'
 
 # install the apps
 cask 'java' unless system "/usr/libexec/java_home --failfast"
@@ -31,3 +32,5 @@ brew 'phantomjs'
 brew 'embulk'
 brew 'digdag'
 brew 'direnv'
+brew 'ffmpeg'
+brew 'ghkw'

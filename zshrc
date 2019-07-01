@@ -215,4 +215,7 @@ export PATH="$HOME/bin:$PATH"
 eval "$(direnv hook zsh)"
 
 setopt nonomatch
-export PATH="/usr/local/opt/libxml2/bin:$PATH"
+
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
