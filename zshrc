@@ -23,7 +23,6 @@ select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
-
 ########################################
 # 補完
 # 補完機能を有効にする
@@ -43,6 +42,11 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
 # ps コマンドのプロセス名補完
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
+# ls の色変更
+export LSCOLORS=gxfxcxdxbxegedabagacad
+export LS_COLORS='di=36:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+
+zstyle ':completion:*' list-colors 'di=36' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 ########################################
 # vcs_info
@@ -114,7 +118,8 @@ bindkey '^R' history-incremental-pattern-search-backward
 ########################################
 # エイリアス
 
-alias la='ls -la'
+alias ls='ls -laG'
+alias gls="gls --color"
 alias ll='ls -l'
 
 alias rm='rm -i'
