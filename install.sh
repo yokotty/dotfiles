@@ -28,6 +28,7 @@ ln -snf dotfiles/karabiner ~/.config/karabiner
 # brew
 brew update
 brew bundle
+brew link mysql@5.7 --force
 
 # switch shell
 if [ $(echo $SHELL) != '/bin/zsh' ] ; then

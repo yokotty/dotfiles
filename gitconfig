@@ -7,8 +7,10 @@
     co = checkout
     cob = checkout -b
     ci = commit
-	pr = pull-request
-	see = browse
+    pr = pull-request
+    see = browse
+    cp = cherry-pick
+    f = fetch -p
 [user]
     name  = yokotty
     email = jumpei.yokota@gmail.com

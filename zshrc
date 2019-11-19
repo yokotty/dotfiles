@@ -198,6 +198,7 @@ fi
 # rbenv
 export RBENV_ROOT=/usr/local/var/rbenv
 eval "$(rbenv init - zsh)"
+export PATH="/usr/local/sbin:$PATH"
 
 # direnv
 eval "$(direnv hook zsh)"
@@ -224,3 +225,6 @@ setopt nonomatch
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+#nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
